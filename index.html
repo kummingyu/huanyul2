@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>환율 계산기</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>환율 계산기</h1>
+  <form id="currency-form">
+    <label for="amount">금액:</label>
+    <input type="number" id="amount" name="amount">
+    <label for="to">환전할 통화:</label>
+    <select id="to" name="to">
+      <option value="CNY">중국 돈 (CNY)</option>
+      <option value="KRW">한국 돈 (KRW)</option>
+      <option value="USD">미국 돈 (USD)</option>
+      <option value="GBP">영국 돈 (GBP)</option>
+      <option value="JPY">일본 돈 (JPY)</option>
+      <option value="EUR">유럽 돈 (EUR)</option>
+    </select>
+    <label for="from">환전받을 통화:</label>
+    <select id="from" name="from">
+      <option value="CNY">중국 돈 (CNY)</option>
+      <option value="KRW">한국 돈 (KRW)</option>
+      <option value="USD">미국 돈 (USD)</option>
+      <option value="GBP">영국 돈 (GBP)</option>
+      <option value="JPY">일본 돈 (JPY)</option>
+      <option value="EUR">유럽 돈 (EUR)</option>
+    </select>
+    <button type="submit">환율 계산</button>
+    <div id="exchange-rate">
+      <label for="rate">현재 환율:</label>
+      <input type="text" id="rate" name="rate" disabled>
+    </div>
+  </form>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
